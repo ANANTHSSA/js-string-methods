@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="demo"></h3>
+    <h3 id="demo2"></h3>
+    <h3 id="demo3"></h3>
+    <h3 id="demo4"></h3>
+    <h3 id="demo5"></h3>
+    <h3 id="demo6"></h3>
+    <h3 id="demo7"></h3>
+
+
+    <script>
+       // match method
+   let text = "The rain in SPAIN stays mainly in the plain";
+        let result = text.match(/ain/);
+        
+        document.getElementById("demo").innerHTML = result;
+
+// match method regular exp
+
+        let text1 = "The rain in SPAIN stays mainly in the plain";
+        let result1 = text1.match(/ain/g);
+        
+        document.getElementById("demo2").innerHTML = result1;
+
+// match method regular exp gi
+
+let text2 = "The rain in SPAIN stays mainly in the plain";
+        let result2 = text2.match(/ain/g);
+         console.log(result2)
+        document.getElementById("demo3").innerHTML = result2;
+
+
+    // index of//
+    let texted = "Hello world, welcome to the universe.";
+        let resulted = texted.indexOf("world");
+        
+
+        document.getElementById("demo4").innerHTML = resulted;
+
+        // index of distance
+        let texted2 = "Hello world, welcome to the universe.";
+         document.getElementById("demo5").innerHTML = texted2.indexOf("e", 5);
+
+         // index of negative
+         let texted3 = "Hello world, welcome to the universe.";
+         document.getElementById("demo6").innerHTML = texted3.indexOf("z", 5);
+
+         // last indexof
+         let texted4 = "Hello planet earth, you are a great planet.";
+            let resulted4 = texted4.lastIndexOf("planet");
+
+            document.getElementById("demo7").innerHTML = resulted4; 
+    </script>
+</body>
+</html>
